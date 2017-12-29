@@ -7,6 +7,7 @@ import java.io.IOException;
 
 /**
  * Created by 11981 on 2017/12/7.
+ * reference:https://segmentfault.com/q/1010000000359840/
  */
 public class FileProcessorImpl implements FileProcessor{
     public String processByLine(String filePath, LineProcessor processor){

@@ -1,15 +1,15 @@
-package compositepattern;
+package pattern.composite;
 
 /**
  * Created by 11981 on 2018/5/13.
+ * 图像文件类-叶子节点
  */
-public class VideoFile extends AbstractFile {
+public class ImageFile extends AbstractFile {
     private String name;
 
-    public VideoFile(String name){
-       this.name = name;
+    public ImageFile(String name){
+        this.name = name;
     }
-
     @Override
     public void add(AbstractFile file){
         System.out.println("对不起，支持该方法");
@@ -28,6 +28,6 @@ public class VideoFile extends AbstractFile {
     @Override
     public void killVirus(){
         //模拟杀毒
-        System.out.print("对图像文件："+ name +"进行杀毒");
+        System.out.println("对图像文件："+ name +"进行杀毒");
     }
 }

@@ -1,4 +1,4 @@
-package compositepattern;
+package pattern.composite;
 
 /**
  * Created by 11981 on 2018/5/13.

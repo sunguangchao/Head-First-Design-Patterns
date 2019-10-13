@@ -1,15 +1,16 @@
-package compositepattern;
+package pattern.composite;
 
 /**
  * Created by 11981 on 2018/5/13.
- * 图像文件类-叶子节点
+ * 文本文件类：叶子节点
  */
-public class ImageFile extends AbstractFile {
+public class TextFile extends AbstractFile {
     private String name;
 
-    public ImageFile(String name){
+    public TextFile(String name){
         this.name = name;
     }
+
     @Override
     public void add(AbstractFile file){
         System.out.println("对不起，支持该方法");

@@ -1,4 +1,4 @@
-package adapterpattern;
+package pattern.adapter;
 
 /**
  * Created by 11981 on 2018/5/13.

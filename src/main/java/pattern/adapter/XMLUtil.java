@@ -1,4 +1,4 @@
-package adapterpattern;
+package pattern.adapter;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

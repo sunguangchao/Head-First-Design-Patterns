@@ -1,4 +1,4 @@
-package com.sungc.proxy;
+package 代理模式;
 
 public class DBQuery implements IDBQuery{
 

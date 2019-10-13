@@ -1,4 +1,4 @@
-package com.sungc.xiang;
+package 浜厓妯″紡;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,10 +9,10 @@ public class ReportManagerFactory {
 	Map<String, IReportManager> employeeReport = new HashMap<String, IReportManager>();
 	
 	IReportManager getFinancialReport(String tenantId) {
-		//通过租户ID获取享元
+		//通锟斤拷锟解户ID锟斤拷取锟斤拷元
 		IReportManager r = financialReport.get(tenantId);
 		if (r == null) {
-			//维护已创建的享元对象
+			//维锟斤拷锟窖达拷锟斤拷锟斤拷锟斤拷元锟斤拷锟斤拷
 			r = new FinancialReportManager(tenantId);
 			financialReport.put(tenantId, r);
 		}

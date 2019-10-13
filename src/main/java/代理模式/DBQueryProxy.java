@@ -1,4 +1,4 @@
-package com.sungc.proxy;
+package 浠ｇ悊妯″紡;
 
 
 public class DBQueryProxy implements IDBQuery{
@@ -6,7 +6,7 @@ public class DBQueryProxy implements IDBQuery{
 	private DBQuery real = null;
 	@Override
 	public String request() {
-		// 在真正需要的时候，创建对象，创建过程可能很慢
+		// 锟斤拷锟斤拷锟斤拷锟斤拷要锟斤拷时锟津，达拷锟斤拷锟斤拷锟襟，达拷锟斤拷锟斤拷锟教匡拷锟杰猴拷锟斤拷
 		if (real == null) {
 			real = new DBQuery();
 		}

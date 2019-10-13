@@ -1,4 +1,4 @@
-package com.sungc.director;
+package 装饰者模式;
 
 public class PacketBodyCreator implements IPacketCreator{
 

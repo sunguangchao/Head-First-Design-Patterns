@@ -1,4 +1,4 @@
-package com.sungc.proxy;
+package 浠ｇ悊妯″紡;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -17,7 +17,7 @@ public class JdkDBQueryHandler implements InvocationHandler{
 	}
 	
 	/**
-	 * 得到动态生成的代理类
+	 * 锟矫碉拷锟斤拷态锟斤拷锟缴的达拷锟斤拷锟斤拷
 	 * @return
 	 */
 	public static IDBQuery createJdkProxy() {

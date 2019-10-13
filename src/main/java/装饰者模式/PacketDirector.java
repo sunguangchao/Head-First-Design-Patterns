@@ -1,4 +1,4 @@
-package com.sungc.director;
+package 装饰者模式;
 
 public abstract class PacketDirector implements IPacketCreator{
 	IPacketCreator component;

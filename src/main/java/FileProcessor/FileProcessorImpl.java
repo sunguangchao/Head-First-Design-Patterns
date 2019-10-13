@@ -1,4 +1,4 @@
-package work;
+package FileProcessor;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

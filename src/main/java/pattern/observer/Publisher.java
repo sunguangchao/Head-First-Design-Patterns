@@ -23,7 +23,7 @@ public class Publisher {
     }
 
 
-    private void unsubscribe(Subscriber subscriber){
+    protected void unsubscribe(Subscriber subscriber){
         if (this.subscribers.contains(subscriber)){
             this.subscribers.remove(subscriber);
         }

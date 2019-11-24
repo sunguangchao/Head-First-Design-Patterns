@@ -7,7 +7,7 @@ package geektime.stack_08;
 public class StackBasedOnLinkedList {
     private Node top = null;
 
-    
+
     public void push(int value){
         Node newNode = new Node(value, null);
         if (top == null){

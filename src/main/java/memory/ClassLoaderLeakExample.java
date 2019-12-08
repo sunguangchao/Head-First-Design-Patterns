@@ -43,6 +43,10 @@ public class ClassLoaderLeakExample {
         }
     }
 
+    /**
+     * 必须确保每次得到一个新的类
+     * 而非系统class loader提供的重用类
+     */
     static final class ChildOnlyClassLoader extends ClassLoader{
         ChildOnlyClassLoader(){
             super(ChildOnlyClassLoader.class.getClassLoader());

@@ -6,6 +6,11 @@ import java.util.Scanner;
  * @Author: sunguangchao
  * @Date: 2019/10/22 9:35 AM
  * 基于单链表实现LRU算法
+ * 维护一个有序单链表，越靠近链表尾部的结点是越早之前访问的。当有一个新的数据被访问时，我们从链表头开始顺序遍历链表。
+ * 如果此数据没有在缓存链表中，又可以分为两种情况：
+ * 如果此时缓存未满，则将此结点直接插入到链表的头部；
+ * 如果此时缓存已满，则链表尾结点删除，将新的数据结点插入链表的头部。
+ *
  */
 public class LRUBaseLinkedList<T> {
 
@@ -49,7 +54,9 @@ public class LRUBaseLinkedList<T> {
         if (preNode != null){
             deleteElemOptim(preNode);
             insertElemAtBegin(data);
-        }else{
+        }
+        //如果是新插入的元素：1链表未满，插入头结点；2链表满了，先删除尾结点，再插入头结点
+        else{
             if (length >= this.capacity){
                 //删除尾结点
                 deleteElemAtEnd();
